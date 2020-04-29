@@ -1,13 +1,21 @@
 /* debug */
-.debug [class*= "col-"] {
+
+.debug .container [class*= "col-"] {
   border: 1px solid black;
   height: 200px;
   background-color: pink;
+  padding: 5px;
+}
+.debug [class*="col-"]> .container {
+  height: 100%; /* Importante */
+  border: none;
 }
 
-.debug .container [class*= "col-"]>.container [class*= "col-"] {
-  background-color: coral;
+.debug .container [class*= "col-"]> .container [class*= "col-"] {
+  background-color: lightcoral;
   border: 1px solid white;
+  height: 100%; /* Importante */
+
 }
 
 /* FINE debug */
@@ -22,7 +30,6 @@
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  height: 200px;
 }
 
 [class*= "col-"] {

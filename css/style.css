@@ -1,8 +1,7 @@
 [class*="col-"] {
   position: relative;
-  height: 200px;
-}
 
+}
 
 p {
   position:absolute;
